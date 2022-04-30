@@ -1,38 +1,35 @@
 #include <iostream>
 #include <type_traits>
 
-using namespace std;
-
 int main(){
 
-  cout << endl;
-  cout << boolalpha;
+  std::cout << std::boolalpha;
 
-  cout << "is_void<void>::value: " << is_void<void>::value << endl;
-  cout << "is_integral<short>::value: " << is_integral<short>::value << endl;
-  cout << "is_floating_point<double>::value: " << is_floating_point<double>::value << endl;
-  cout << "is_array<int []>::value: " << is_array<int [] >::value << endl;
-  cout << "is_pointer<int*>::value: " << is_pointer<int*>::value << endl;
-  cout << "is_null_pointer<std::nullptr_t>::value: " << is_null_pointer<std::nullptr_t>::value << endl;
+  std::cout << "std::is_void<void>::value: " << std::is_void<void>::value << '\n';
+  std::cout << "std::is_integral<short>::value: " << std::is_integral<short>::value << '\n';
+  std::cout << "std::is_floating_point<double>::value: " << std::is_floating_point<double>::value << '\n';
+  std::cout << "std::is_array<int []>::value: " << std::is_array<int [] >::value << '\n';
+  std::cout << "std::is_pointer<int*>::value: " << std::is_pointer<int*>::value << '\n';
+  std::cout << "std::is_null_pointer<std::nullptr_t>::value: " << std::is_null_pointer<std::nullptr_t>::value << '\n';
   struct A{
     int a;
     int f(double){return 2011;}
   };
-  cout << "is_member_object_pointer<int A::*>::value: " << is_member_object_pointer<int A::*>::value << endl;
-  cout << "is_member_function_pointer<int (A::*)(double)>::value: " << is_member_function_pointer<int (A::*)(double)>::value << endl;
+  std::cout << "std::is_member_object_pointer<int A::*>::value: " << std::is_member_object_pointer<int A::*>::value << '\n';
+  std::cout << "std::is_member_function_pointer<int (A::*)(double)>::value: " << std::is_member_function_pointer<int (A::*)(double)>::value << '\n';
   enum E{
     e = 1,
   };
-  cout << "is_enum<E>::value: " << is_enum<E>::value << endl;
+  std::cout << "std::is_enum<E>::value: " << std::is_enum<E>::value << '\n';
   union U{
     int u;
   };
-  cout << "is_union<U>::value: " << is_union<U>::value << endl;
-  cout << "is_class<string>::value: " << is_class<string>::value << endl;
-  cout << "is_function<int * (double)>::value: " << is_function<int * (double)>::value << endl;
-  cout << "is_lvalue_reference<int&>::value: " << is_lvalue_reference<int&>::value << endl;
-  cout << "is_rvalue_reference<int&&>::value: " << is_rvalue_reference<int&&>::value << endl;
+  std::cout << "std::is_union<U>::value: " << std::is_union<U>::value << '\n';
+  std::cout << "std::is_class<std::string>::value: " << std::is_class<std::string>::value << '\n';
+  std::cout << "std::is_function<int * (double)>::value: " << std::is_function<int * (double)>::value << '\n';
+  std::cout << "std::is_lvalue_reference<int&>::value: " << std::is_lvalue_reference<int&>::value << '\n';
+  std::cout << "std::is_rvalue_reference<int&&>::value: " << std::is_rvalue_reference<int&&>::value << '\n';
 
-  cout << endl;
+  std::cout << '\n';
 
 }
