@@ -33,8 +33,6 @@ namespace my{
   template<typename I1, typename I2>
   I2 copy(I1 first, I1 last, I2 out){
     typedef typename std::iterator_traits<I1>::value_type value_type;
-    // old GCC name
-    //return copy_imp(first, last, out, std::has_trivial_copy_assign<value_type>());
     return copy_imp(first, last, out, std::is_trivially_copy_assignable<value_type>());
   }
 }
@@ -56,7 +54,7 @@ int main(){
 
   my::copy(pArray2, pArray2 + arraySize, pArray);
 
-  std::cout << "\n" << "Copying intArray ";
+  std::cout << "\n" << "Copying pArray2 ";
 
   my::copy(intArray2, intArray2 + arraySize, intArray);
 
