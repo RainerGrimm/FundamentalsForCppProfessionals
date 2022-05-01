@@ -1,7 +1,7 @@
 #include <iostream>
 #include <type_traits>
 
-template< class T >
+template<typename T>
 struct Add{
 
   // check the assertion
