@@ -42,6 +42,7 @@ private:
 int main(){
 
    std::cout << '\n';
+   
    std::cout << std::fixed << std::setprecision(10);
 
    Account account(200000000);
