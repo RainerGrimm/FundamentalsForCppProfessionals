@@ -13,7 +13,7 @@ int main(){
   std::cout << "weakPtr.expired(): " << weakPtr.expired() << '\n';
 
   if(std::shared_ptr<int> sharedPtr1 = weakPtr.lock()) {
-    std::cout << "*sharedPtr: " << *sharedPtr << '\n';
+    std::cout << "*sharedPtr1: " << *sharedPtr1 << '\n';
   }
   else{
     std::cout << "Don't get the resource!" << '\n';
