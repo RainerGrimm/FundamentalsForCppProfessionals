@@ -46,10 +46,12 @@ set(example_programs    built_inLiteral
     explicit
     IOStreamsInOut
     dotProduct
+    callableUnitFunctionObject
     rawString
     stringComparisoConcatenation
     methodThisPointer
     stlAlgorithmsTransform
+    callableUnitLambaFunction
     delete
     templateDefaultArguments
     typeTraitsGcd
@@ -86,6 +88,7 @@ set(example_programs    built_inLiteral
     autoExplicit
     threadOperations
     stlOrderedAssoziativeContainerAssoziativeArray
+    callableUnitFunction
     destructor
     memberFunctionVirtual
     initializerList
@@ -94,6 +97,7 @@ set(example_programs    built_inLiteral
     templateSpecialization
     typeTraitsTypeCategories
     stringModification
+    typeTraitsFill
     classMemberInitializer
     lambdaFunction
     swap
@@ -119,6 +123,7 @@ set(example_programs    built_inLiteral
     stlAlgorithmsRemove
     sharedPtr
     stlOrderedAssoziativeContainerModify
+    typeModifications
     constExpressionCpp14
     promiseFutureSynchronize
     regexReplace
@@ -146,7 +151,6 @@ set(example_programs    built_inLiteral
     templateTemplateTemplatesParameter
     IOStreamsInputFormatted
     sharedPtrDeleter
-    typeTraitsCopy
     inheritanceAbstractBase
     methodStatic
     constructorExplicit
@@ -156,6 +160,7 @@ set(example_programs    built_inLiteral
     default
     rvalueReference
     lockGuard
+    staticAssert
     asyncLazyEager
     conditionVariable
     stlContainerSize
