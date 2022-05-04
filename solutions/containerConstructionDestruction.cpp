@@ -8,17 +8,17 @@ struct Test {
        
     }
     Test(const Test& other){
-        std::cout << "copy construction ";
+        std::cout << "copy constructor ";
     }
     Test& operator=(const Test& other){
-        std::cout << "copy assingment ";
+        std::cout << "copy assignment ";
         return *this;
     }
     Test(Test&& other){
-        std::cout << "move construction ";
+        std::cout << "move constructor ";
     }
     Test& operator=(Test&& other){
-        std::cout << "move assingment ";
+        std::cout << "move assignment ";
         return *this;
     }
     ~Test() {

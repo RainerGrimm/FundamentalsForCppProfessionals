@@ -15,7 +15,8 @@ struct Test {
 
 int main() {
 
-    std::cout << "Count number of elements: \n";
+    std::cout << '\n';
+
     std::vector<Test> myVec2(2);
     std::vector<Test> myVec1(1);
 
