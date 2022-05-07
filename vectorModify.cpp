@@ -29,15 +29,13 @@ int main(){
   
   std::cout << '\n';
   
-  intVec.insert(intVec.begin()+4, 4);
+  intVec.insert(intVec.begin() + 4, 4);
   for (auto v: intVec) std::cout << v << " ";
   
   std::cout << '\n';
   
   intVec.insert(intVec.end(), {5, 6, 7, 8, 9, 10, 11});
   for (auto v: intVec) std::cout << v << " ";
-  std::cout << '\n';
-  for (auto revIt = intVec.rbegin(); revIt != intVec.rend(); ++revIt) std::cout << *revIt << " ";
   
   std::cout << '\n';
   

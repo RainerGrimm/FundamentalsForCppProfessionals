@@ -53,12 +53,5 @@ int main(){
   for (auto p: int2Str) std::cout << "{" << p.first << ", " << p.second << "} ";
   
   std::cout << "\n\n";
-  
-  std::pair<std::map<int, std::string>::iterator, bool> success= int2Str.insert({0, "ZERO"});
-  auto success2 = int2Str.insert({0, "ZERO"});
-  if (success2.second) std::cout << "Insertion of {0, ZERO} successful " << '\n';
-  else std::cout << "Insertion of {0, ZERO} failed" << '\n';
-   
-  std::cout << '\n';
 
 }
