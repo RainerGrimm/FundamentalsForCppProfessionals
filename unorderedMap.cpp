@@ -27,7 +27,6 @@ int main(){
   um["Scott"] = 1988;
   for(auto p : um) std::cout << '{' << p.first << ", " << p.second << '}';
 
-  std::cout << '\n';
-
-  std::cout << '\n';
+  std::cout << "\n\n"
+  
 }
