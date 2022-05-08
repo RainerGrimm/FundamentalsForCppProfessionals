@@ -39,6 +39,7 @@ set(example_programs    built_inLiteral
     stringNumericConversion
     templateClassTemplate
     override
+    unorderedOrderedContainerPerformance
     stringConstructor
     operatorOverloadingCall
     perfectForwarding
@@ -66,6 +67,7 @@ set(example_programs    built_inLiteral
     lambdaFunctionClosure
     bigArray
     stlAlgorithms
+    stlContainersCommonInterface
     auto
     IOStreamsOutput
     IOStreamsFormatter
@@ -80,6 +82,7 @@ set(example_programs    built_inLiteral
     stringView
     uniquePtr
     mutex
+    containerConstructionDestruction
     rangeBasedForLoop
     safeInitializationCallOnce
     inheritanceAccessRights
@@ -87,6 +90,7 @@ set(example_programs    built_inLiteral
     constructorInheriting
     autoExplicit
     threadOperations
+    unorderedSetHashInfo
     stlOrderedAssoziativeContainerAssoziativeArray
     callableUnitFunction
     destructor
@@ -114,9 +118,9 @@ set(example_programs    built_inLiteral
     refactor2
     templateSpecializationFull
     overloadNewAndDelete2
-    stlContainerSearchRange
     constExpression
     functionOverloading
+    regexWordStatistic
     structuredBinding
     operatorOverloadingAssignment
     constructor
@@ -146,6 +150,7 @@ set(example_programs    built_inLiteral
     fillGCC
     templateClassTemplateMemberFunctions
     stringCverusC++
+    stlAlgorithmsSearchRange
     templateArgumentDeduction
     regexSearch
     templateTemplateTemplatesParameter
@@ -160,6 +165,7 @@ set(example_programs    built_inLiteral
     default
     rvalueReference
     lockGuard
+    unorderedMap
     staticAssert
     asyncLazyEager
     conditionVariable

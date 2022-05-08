@@ -35,7 +35,6 @@ set(example_programs    userDefinedLiteralExtended
     enum
     refactor3
     countDown
-    unorderedOrderedContainerPerformance
     recursiveMutex
     makeUnique
     dispatchGeneric
@@ -51,24 +50,26 @@ set(example_programs    userDefinedLiteralExtended
     IOStreamsFraction
     power2
     stringInputOutput
+    smartPointerPerformanceUnique
+    containerConstructionDestruction
     stlAlgorithmenForEach
     constructorInheriting
     autoExplicit
-    unorderedSetHashInfo
     vectorSize
     power1
     stringFind
     IOStreamsStreamBuffer
     initializerList
+    smartPointerPerformanceNative
     templateClassTemplateMethods3
     lambdaFunctionCapture
     templateClassTemplateMemberFunctions3
     printf
     constructorDelegationRecursive
     stlAlgorithmenAccumulate
-    unorderedSetMultiset
     promiseFutureException
     automaticReturnType
+    smartPointerPerformanceShared
     regexSearchEmail
     overrideFinal
     classMemberInitializerWidget
@@ -76,7 +77,6 @@ set(example_programs    userDefinedLiteralExtended
     refactor2
     threadHardwareConcurrency
     explicitToImplicit
-    regexWordStatistic
     rangedBasedForLoop
     singletonMultithreading
     templateAutomaticReturnTypeTypeTraits
@@ -99,7 +99,6 @@ set(example_programs    userDefinedLiteralExtended
     array
     sharedFuture
     lockGuard
-    unorderedMap
    )
 
 foreach(example_program ${example_programs})
