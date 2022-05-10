@@ -93,13 +93,10 @@ int main(){
   str.replace(16, 8, "");
   std::cout << str << '\n';
   
-  str.replace(4, 0, 5, 'y');
-  std::cout << str << '\n';
-  
   str.replace(str.begin(), str.end(), "Only for testing purpose.");
   std::cout << str << '\n';
   
-  str.replace(str.begin()+4, str.end()-8, 10, '#');
+  str.replace(str.begin() + 4, str.end() - 8, 10, '#');
   std::cout << str << '\n';
   
   std::cout << '\n';
