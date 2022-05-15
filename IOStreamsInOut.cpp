@@ -54,7 +54,7 @@ int main(){
   
   std::cout << '\n';
   
-  std::string grimm{"grimm.txt"};
+  std::string grimm{"test.txt"};
   
   writeFile(grimm);
   std::cout << '\n';

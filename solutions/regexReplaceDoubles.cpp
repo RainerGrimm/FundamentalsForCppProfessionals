@@ -6,7 +6,7 @@ int main(){
 
   std::cout << '\n';
 
-  std::string germanDoubles{"+0, 85 -13, 2 1, 0 , 45 -13, 7 1, 03425 10134, 25"};
+  std::string germanDoubles{"+0,85 -13,2 1,0 ,45 -13,7 1,03425 10134,25"};
   std::cout << germanDoubles << '\n';
 
   // replace ", " with "."

@@ -6,10 +6,10 @@ int main(){
 
   std::cout << '\n';
 
-  std::string emailText = "A text with an email adresse: rainer@grimm-jaud.de.";
+  std::string emailText = "A text with an email address: rainer@grimm-jaud.de.";
 
   // regular expression for the email address
-  std::string regExprStr(R"(([\w.%+-]+)@([\w.-]+\.[a-zA-Z]{2, 4}))");
+  std::string regExprStr(R"(([\w.%+-]+)@([\w.-]+\.[a-zA-Z]{2,4}))");
 
   // regular expression holder
   std::regex rgx(regExprStr);
