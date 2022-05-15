@@ -9,12 +9,12 @@ struct CriticalData{
 
 void deadLock(CriticalData& a, CriticalData& b){
 
-  std::unique_lock<std::mutex>guard1(a.mut, std::defer_lock);
+  std::unique_lock<std::mutex>guard1(a.mut);
   std::cout << "Thread: " << std::this_thread::get_id() << " defer the locking of the first mutex" <<  '\n';
 
   std::this_thread::sleep_for(std::chrono::milliseconds(1));
 
-  std::unique_lock<std::mutex>guard2(b.mut, std::defer_lock);
+  std::unique_lock<std::mutex>guard2(b.mut);
   std::cout << "Thread: " << std::this_thread::get_id() << " defer the locking of the second mutex" <<  '\n';
 
   std::cout << "Thread: " << std::this_thread::get_id() << " locking them both atomically" << '\n';
