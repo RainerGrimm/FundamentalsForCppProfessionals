@@ -66,7 +66,6 @@ set(example_programs    userDefinedLiteralExtended
     templateClassTemplateMemberFunctions3
     printf
     constructorDelegationRecursive
-    stlAlgorithmenAccumulate
     promiseFutureException
     automaticReturnType
     smartPointerPerformanceShared

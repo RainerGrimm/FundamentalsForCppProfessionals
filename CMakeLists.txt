@@ -61,6 +61,7 @@ set(example_programs    built_inLiteral
     templateSpecializationTypeTraits
     uniformInitialization
     singleton
+    threadLocal
     raii
     methodConstexpr
     methodConst
@@ -89,7 +90,6 @@ set(example_programs    built_inLiteral
     lambdaFunctionGeneric
     constructorInheriting
     autoExplicit
-    threadOperations
     unorderedSetHashInfo
     stlOrderedAssoziativeContainerAssoziativeArray
     callableUnitFunction
@@ -106,10 +106,10 @@ set(example_programs    built_inLiteral
     lambdaFunction
     swap
     memoryAccess
-    threadLifetime
     operatorOverloading
     regexMatch
     userDefinedLiteral
+    stlAlgorithmenAccumulate
     automaticReturnType
     overrideFinal
     classMemberInitializerWidget
