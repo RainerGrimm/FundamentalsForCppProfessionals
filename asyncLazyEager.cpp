@@ -9,9 +9,9 @@ int main(){
 
   auto begin = std::chrono::system_clock::now();
 
-  auto asyncLazy = std::async(std::launch::deferred, []{ return  std::chrono::system_clock::now();});
+  auto asyncLazy = std::async(std::launch::deferred, []{ return std::chrono::system_clock::now(); });
 
-  auto asyncEager = std::async( std::launch::async, []{ return  std::chrono::system_clock::now();});
+  auto asyncEager = std::async( std::launch::async, []{ return std::chrono::system_clock::now(); });
 
   std::this_thread::sleep_for(std::chrono::seconds(1));
 
