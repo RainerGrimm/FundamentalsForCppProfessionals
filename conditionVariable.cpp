@@ -24,9 +24,10 @@ void waitingForWork(){
 }
 
 void setDataReady(){
-
-    std::lock_guard<std::mutex> lck(mutex_);
-    dataReady = true;
+    {
+      std::lock_guard<std::mutex> lck(mutex_);
+      dataReady = true;
+    }
     std::cout << "Sender: Data is ready."  << '\n';
     condVar.notify_one();
 

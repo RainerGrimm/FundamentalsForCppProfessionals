@@ -1,29 +1,27 @@
-#include <initializer_list>
-#include <functional>
-
 #include <chrono>
 #include <future>
 #include <map>
 #include <string>
+#include <thread>
 #include <tuple>
 
 int main(){
 
-  std::initializer_list<int> myInts = {1, 2, 3};
-  std::initializer_list<int>::iterator myIntBegin = myInts.begin();
+  auto myInts={1, 2, 3};
+  auto myIntBegin= myInts.begin();
 
-  std::map<int, std::string> myMap = {{1, std::string("one")}, {2, std::string("two")}};
-  std::map<int, std::string>::iterator myMapBegin = myMap.begin();
+  std::map<int, std::string> myMap={{1, std::string("one")}, {2, std::string("two")}};
+  auto myMapBegin= myMap.begin();
 
-  std::function< std::string(const std::string&) > func = [](const std::string& a){ return a; };
+  auto func= [](const std::string& a){ return a;};
 
-  std::future<std::string> futureLambda= std::async([]{ return std::string("Hello "); });
+  auto futureLambda= std::async([]{ return std::string("Hello "); });
 
-  std::chrono::time_point<std::chrono::system_clock> begin = std::chrono::system_clock::now();
+  auto begin = std::chrono::system_clock::now();
 
-  std::pair<int, std::string> pa = std::make_pair(1, std::string("second"));
+  auto pa= std::make_pair(1, std::string("second"));
 
-  std::tuple<std::string, int, double, bool, char> tup = std::make_tuple(std::string("second"), 4, 1.1, true, 'a');
+  auto tup= std::make_tuple(std::string("second"), 4, 1.1, true, 'a');
 
 }
 

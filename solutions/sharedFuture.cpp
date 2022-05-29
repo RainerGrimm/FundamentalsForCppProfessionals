@@ -51,9 +51,9 @@ int main(){
   // get the futures
   std::shared_future<int> divResult= divPromise.get_future();
 
-  // calculate the result in a seperat thread
+  // calculate the result in a seperate thread
   Div div;
-  std::thread divThread(div,std::move(divPromise),20,10);
+  std::thread divThread(div,std::move(divPromise), 20, 10);
 
   Requestor req;
   std::thread sharedThread1(req,divResult);
