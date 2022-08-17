@@ -48,7 +48,7 @@ int main(){
 
   BankAccount bankAccount3(100.0);
   Account& aRef = bankAccount3;
-  aPtr2->withdraw(150);
+  aRef.withdraw(150);
   std::cout << "aRef.getBalance(): " << aRef.getBalance() << '\n';
 
   std::cout << '\n';
